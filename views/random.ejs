@@ -12,6 +12,7 @@
     <title>Marvel Comics</title>
   </head>
   <body>
+  <div id='wrapper'>
     <header>
     <h1>Marvel Comics</h1>
     </header>
@@ -30,7 +31,11 @@
     </div>
   </div>
 </nav>
+<a href="/random" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">New Random Comic here!</a>
+<div class="media1">
+<img id="pic"src="<%= info.data.results[0].thumbnail.path+'.'+info.data.results[0].thumbnail.extension%>" class="align-self-start mr-3" alt="Hero" width="25%" height="25%">
 
+</div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
