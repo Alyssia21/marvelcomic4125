@@ -134,12 +134,14 @@ app.post('/findDate', function(req,res){
 });
 
 app.get('/random', function(req, res){
-   // let randNum=Math.floor((Math.random() * 2373) + 1);
-    //fetch('https://xkcd.com/'+randNum+'/info.0.json')
-    //.then(res => res.json())
-    //.then(data => {
-        res.render('random',{data:data})
-    //});
+    let randNum=Math.floor((Math.random() * 92500) + 1);
+    fetch('https://gateway.marvel.com:443/v1/public/comics/'+randNum+'?&limit='
+      + limit + '&ts=' + ts + '&apikey=' + pubkey + '&hash=' + hash)
+    .then(res => res.json())
+    .then(info => {
+        res.render('random',{info:info})
+    .catch(console.log("no correct input"))
+    });
 });
 
 app.get('/contact', function(req, res){
