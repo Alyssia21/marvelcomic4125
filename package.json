@@ -12,6 +12,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/Ashlyn708/marvelcomic4125/issues"
   },
-  "homepage": "https://github.com/Ashlyn708/marvelcomic4125#readme"
+  "homepage": "https://github.com/Ashlyn708/marvelcomic4125#readme",
+   "engines": {
+    "node": "12.x"
+   }
 }
