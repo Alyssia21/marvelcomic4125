@@ -15,16 +15,18 @@ padding:5%;
 }
 #wrapper{
     background-color: hsla(0, 100%, 0%, .85); 
+    Font-family: "Times New Roman", Times, serif;
 	margin-left: auto; 
 	margin-right: auto;
 	width: 40%; 
 	min-width: 900px; 
 	max-width: 1280px; 
 	box-shadow: 10px,10px,10px,white;
+    padding-bottom: 2%;
 }
 
 .jumbotron{
-    background-color: hsla(0, 100%, 0%, .85);
+    background: hsla(0, 100%, 0%, .85);
     border-color: #F3D403;
 }
 .carousel-caption{
@@ -50,12 +52,22 @@ font-size: 45px;
 padding:5%;
 
 }
+
+#welcomelist{
+          background: hsla(0, 100%, 0%, .85); 
+          color:black;
+  
+}
 h3{
 text-align: center;
 Font-family: "Times New Roman", Times, seriff;
 font-weight: bold;
 font-size: 30px;
 padding:5%;
+}
+
+#searchJumbo{
+        background-color: hsla(0, 100%, 0%, .85); 
 
 }
 
