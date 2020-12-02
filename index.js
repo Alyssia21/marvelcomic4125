@@ -134,7 +134,7 @@ app.post('/findDate', function(req,res){
 });
 
 app.get('/random', function(req, res){
-    let randNum=Math.floor((Math.random() * 92500) + 1);
+let randNum=Math.floor((Math.random() * 5000) + 1);
     fetch('https://gateway.marvel.com:443/v1/public/comics/'+randNum+'?&limit='
       + limit + '&ts=' + ts + '&apikey=' + pubkey + '&hash=' + hash)
     .then(res => res.json())
@@ -142,6 +142,7 @@ app.get('/random', function(req, res){
         res.render('random',{info:info})
     .catch(console.log("no correct input"))
     });
+    
 });
 
 app.get('/contact', function(req, res){
